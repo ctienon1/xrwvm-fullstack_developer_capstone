@@ -1,4 +1,4 @@
-# Uncomment the following imports before adding the Model code
+# Uncomment the following imports before adding the Model code - Reviewed Lint
 
 from django.db import models
 from django.utils.timezone import now
