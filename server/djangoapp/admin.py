@@ -6,13 +6,17 @@ from .models import CarMake, CarModel
 admin.site.register(CarMake)
 admin.site.register(CarModel)
 # CarModelInline class
+
+
 class CarModelInline (admin.StackedInline):
     model = CarModel
     extra = 10
 
+
 # CarModelAdmin class
 class CarModelAdmin (admin.ModelAdmin):
-    fields = ['car_make','name','type','year']
+    fields = ['car_make', 'name', 'type', 'year']
+
 
 # CarMakeAdmin class with CarModelInline
 class CarMakeAdmin(admin.ModelAdmin):
